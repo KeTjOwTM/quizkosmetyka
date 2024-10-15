@@ -303,7 +303,7 @@ const questions = [
 
     
     //CZERWIEC 2022
-    
+
 
 
     //{ question: "", answers: ["", "", "", ""], correct: 3 },
@@ -322,6 +322,7 @@ let selectedQuestions = [];
 let currentQuestionIndex = 0;
 let score = 0;
 let totalQuestions = 0;
+let answers = []; // to keep track of user's answers
 
 // Function to start the quiz
 function startQuiz(mode) {
@@ -354,6 +355,20 @@ function showQuestion() {
             button.innerText = currentQuestion.answers[index];
             button.disabled = false;
             button.classList.remove('selected', 'correct', 'wrong'); // Reset classes
+            if (answers[currentQuestionIndex] !== undefined) {
+                if (index === answers[currentQuestionIndex]) {
+                    button.classList.add('selected');
+                    button.disabled = true;
+                    if (index === currentQuestion.correct) {
+                        button.classList.add('correct');
+                    } else {
+                        button.classList.add('wrong');
+                    }
+                }
+                if (index === currentQuestion.correct) {
+                    button.classList.add('correct');
+                }
+            }
         });
         // Show/hide previous button
         document.getElementById("prev-btn").style.display = currentQuestionIndex === 0 ? 'none' : 'inline-block';
@@ -377,6 +392,7 @@ function selectAnswer(index) {
             button.classList.add('wrong');
         }
     });
+    answers[currentQuestionIndex] = index; // Save user's answer
     if (index === currentQuestion.correct) {
         score++;
     }
@@ -445,4 +461,5 @@ function goBackToMenu() {
     // Reset quiz state
     currentQuestionIndex = 0;
     score = 0;
+    answers = []; // Clear user's answers
 }
