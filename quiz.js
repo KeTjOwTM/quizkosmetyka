@@ -299,13 +299,141 @@ const questions = [
     { question: "Masaż dłoni i przedramienia należy wykonywać w kolejności:", answers: ["rozcieranie, głaskanie, oklepywanie", "głaskanie, rozcieranie, ugniatanie", "głaskanie, ugniatanie, rozcieranie", "oklepywanie, głaskanie, rozcieranie"], correct: 1 },
     { question: "Klientce z kwadratową płytką paznokciową należy wysmuklić optycznie paznokcie poprzez", answers: ["podpiłowanie boków z zaokrągleniem i polakierowanie paznokci z marginesami po bokach", "opiłowanie na krótko i pomalowanie paznokci z pominięciem obłączka", "nadanie kształtu trójkąta i pomalowanie paznokci lakierem perłowym", "nadanie kształtu migdała i pomalowanie paznokci we wzory geometryczne"], correct: 0 },
     { question: "Ruch głaskania w masażu stopy po rozprowadzeniu preparatu należy rozpocząć od", answers: ["głaskania strony podeszwowej stopy od nasady palców do krawędzi pięty", "głaskania strony grzbietowej i podeszwowej każdego palca po kolei w kierunku serca", "głaskania ścięgna Achillesa w kierunku serca", "głaskania bocznych stron stopy oburącz jednocześnie od nasady palców w kierunku pięty"], correct: 1 },
-    { question: "Do wprowadzenia substancji aktywnych w głąb tkanek z wykorzystaniem zjawiska elektroporacji należy posłużyć się aparatem do", answers: ["kawitacji", "brashingu", "jonoforezy", "mezoterapii"], correct: 3 }
+    { question: "Do wprowadzenia substancji aktywnych w głąb tkanek z wykorzystaniem zjawiska elektroporacji należy posłużyć się aparatem do", answers: ["kawitacji", "brashingu", "jonoforezy", "mezoterapii"], correct: 3 },
 
     
     //CZERWIEC 2022
+    { question: "W celu regulacji łuku brwiowego u klientki ze skórą dojrzałą i wiotką należy zastosować metodę depilacji", answers: ["woskiem miękkim w puszce", "woskiem twardym", "z użyciem wosku w rolce", "z użyciem pęsety"], correct: 3 },
+    { question: "Preparaty kosmetyczne zawierające w swoim składzie bisabolol i srebro, zastosowane w zabiegu pielęgnacyjnym, mają działanie", answers: ["natłuszczające", "nawilżające", "antybakteryjne", "odżywcze"], correct: 2 },
+    { question: "Podczas wykonywania zabiegu darsonwalizacji w gabinecie kosmetycznym wykorzystywany jest prąd", answers: ["zmienny", "stały", "diadynamiczny", "impulsowy"], correct: 0 },
+    { question: "W zabiegach fizykalnych u klientki z cerą naczyniową nie należy stosować", answers: ["sonoforezy", "darsonwalizacji", "jonoforezy", "peelingu kawitacyjnego"], correct: 1 },
+    { question: "W makijażu oczu u osoby noszącej okulary z powodu dalekowzroczności wskazane jest stosowanie cieni", answers: ["brokatowych", "perłowych", "satynowych", "opalizujących"], correct: 2 },
+    { question: "Do kamuflażu przebarwienia na skórze twarzy należy użyć", imageUrl: "https://www.testy.egzaminzawodowy.info/images_testy/a62_st23_36.jpg", answers: ["bronzera", "pudru", "korektora", "różu"], correct: 2 },
+    { question: "W celu nałożenia pudru mineralnego na całą twarz należy wybrać pędzel", answers: ["miękki, zaokrąglony", "płaski, ukośnie ścięty", "wąski, ostro zakończony", "w kształcie wachlarza"], correct: 0 },
+    { question: "Regres tkanki tłuszczowej, brak elastyczności i stopniowy zanik przydatków skóry, to cechy charakterystyczne dla cery", answers: ["suchej", "atroficznej", "wrażliwej", "tłustej"], correct: 1 },
+    { question: "Do określenia stopnia transepidermalnej utraty wody przez naskórek należy posłużyć się", answers: ["badaniem za pomocą kutometru", "badaniem za pomocą ewaporometru", "metodą profilometrii", "metodą diaskopii"], correct: 1 },
+    { question: "Makijaż oczu z efektem flash polega na", answers: ["aplikacji cienia w ciemnym kolorze na całych powiekach ruchomych", "użyciu jednego koloru cienia i rozświetleniu środka powiek ruchomych", "modelowaniu powiek kilkoma kolorami", "nadaniu cieniem kształtu banana w załamaniu powiek i dolnej linii rzęs"], correct: 1 },
+    { question: "W celu przygotowania maski rozpulchniającej w zabiegu oczyszczania manualnego należy użyć mieszanki zawierającej w swoim składzie między innymi", answers: ["koniczynę i szyszki chmielu", "korzeń prawoślazu i siemię lniane", "korę dębu i babkę zwyczajną", "soję i lucernę"], correct: 1 },
+    { question: "Klientce z cerą tłustą należy zaproponować między innymi zabieg kosmetyczny o działaniu", answers: ["odżywczo-detoksykującym", "poprawiającym mikrokrążenie skóry", "modelująco-liftingującym", "spowalniającym proces starzenia się skóry"], correct: 1 },
+    { question: "Do usuwania sztucznych rzęs metodą 1:1 należy posłużyć się", answers: ["płynem micelarnym", "śmietanką", "oliwką", "removerem"], correct: 3},
+    { question: "W celu zapobiegania zakażeniom drobnoustrojami metalowe narzędzia naruszające ciągłość tkanek należy w ostatnim etapie postępowania poddać procesowi", answers: ["sanityzacji", "sterylizacji", "filtracji", "dezynfekcji"], correct: 1 },
+    { question: "Klientce z trądzikiem różowatym należy zalecić stosowanie bazy pod makijaż w kolorze", answers: ["zielonym", "żółtym", "fioletowym", "białym"], correct: 0 },
+    { question: "Optyczna korekta opadających zewnętrznych kącików oczu w makijażu polega na wykonaniu", answers: ["bardzo cienkich, długich i prostych kresek, poprowadzonych prosto, poza kąciki zewnętrzne oczu", "kresek na całej długości oczu, w zewnętrznych kącikach oczu grubszych skierowanych lekko w górę", "kresek grubszych na środkowych częściach powiek, a cieńszych w kącikach zewnętrznych i wewnętrznych", "grubych kresek rozpoczynających się w połowie powiek, a kończących się dokładnie w kącikach zewnętrznych oczu"], correct: 1 },
+    { question: "Roślinne związki biologicznie aktywne o właściwościach przeciwutleniających i poprawiających elastyczność ścian naczyń krwionośnych to", answers: ["azuleny", "flawonoidy", "garbniki", "śluzy"], correct: 1 },
+    { question: "Fioletowe zasinienia pod oczami należy korygować korektorem w kolorze", answers: ["białym", "żółtym", "zielonym", "niebieskim"], correct: 1 },
+    { question: "Jednym z efektów oddziaływania na skórę galwanizacji anodowej jest jej działanie", answers: ["łagodzące", "regenerujące", "przekrwienne", "stymulujące"], correct: 0 },
+    { question: "Przed wykonaniem zabiegu z zastosowaniem prądów wielkiej częstotliwości należy", answers: ["zaaplikować na skórę preparat żelowy", "dokładnie osuszyć skórę", "zaaplikować na skórę krem nawilżający", "zabezpieczyć oczy klienta okularami ochronnymi"], correct: 1 },
+    { question: "Klientce z cerą tłustą należy zalecić w warunkach domowych stosowanie", answers: ["śmietanek do demakijażu i masek termomodelujących", "mleczek do demakijażu i masek liftingujących", "żeli myjących i masek oczyszczających", "żeli myjących i masek ujędrniających"], correct: 2 },
+    { question: "W zabiegu przeciwłojotokowym skóry twarzy z zastosowaniem prądów d'Arsonvala należy zastosować elektrodę", answers: ["grzybkową", "łukową", "grzebieniową", "wałeczkową"], correct: 0 },
+    { question: "Przed wykonaniem na skórze twarzy klienta zabiegu z zastosowaniem prądu stałego należy", answers: ["nanieść olejek na skórę twarzy", "zabezpieczyć oczy klienta okularami ochronnymi", "usunąć metalowe przedmioty z pola zabiegowego", "zaaplikować krem natłuszczający na skórę twarzy"], correct: 2 },
+    { question: "W makijażu fixer należy zastosować w celu", answers: ["utrwalenia makijażu", "kamuflażu sińców pod oczami", "przyciemnienia konturów twarzy", "rozświetlenia makijażu"], correct: 0 },
+    { question: "Naświetlanie skóry lampą Sollux z filtrem czerwonym podczas wykonywania zabiegów kosmetycznych ma na celu", answers: ["łagodzenie objawów trądziku różowatego", "zmniejszanie wydzielania łoju", "przyspieszenie wchłanianie substancji odżywczych", "łagodzenie teleangiektazji"], correct: 2 },
+    { question: "Przygotowując klientkę do przeprowadzenia zabiegu laseroterapii na skórze dekoltu, należy bezwzględnie zabezpieczyć jej", answers: ["włosy czepkiem ochronnym", "oczy okularami ochronnymi", "twarz folią aluminiową", "usta płatkami kosmetycznymi"], correct: 1 },
+    { question: "Podczas modelowania twarzy w kształcie gruszki należy między innymi", answers: ["przyciemnić czoło po skosie przy linii włosów", "rozjaśnić kości żuchwy", "nałożyć róż poziomo do linii ucha", "przyciemnić kości żuchwy"], correct: 3 },
+    { question: "Osoba mająca skłonność do występowania rozszerzonych porów, zaskórników otwartych i zamkniętych w strefie T oraz łuszczenia, uczucia pieczenia i napięcia skóry w pozostałych partiach twarzy ma cerę", answers: ["suchą", "tłustą", " mieszaną", "normalną"], correct: 2 },
+    { question: "Zabiegu złuszczania peelingiem chemicznym nie należy wykonywać w przypadku występowania w polu zabiegu", answers: ["przebarwień", "łojotoku", "egzemy", "zaskórników"], correct: 2 },
+    { question: "Do domowej pielęgnacji klientce z cerą dojrzałą należy polecić stosowanie kremu z wysoką zawartością", answers: ["koenzymu Q™", "alantoiny", "srebra koloidalnego", "wyciągu z aloesu"], correct: 0 },
+    { question: "22-letniej klientce z cerą naczyniową należy zaproponować wykonanie w gabinecie serii zabiegów", answers: ["dotleniająco-modelujących", "wyciszająco-nawilżających", "ściągająco-normalizujących", "regeneracyjno-liftingujących"], correct: 1},
+    { question: "W makijażu rozświetlającym polecanym osobom ze zmęczoną cerą należy posłużyć się kosmetykami", answers: ["ciemnymi i połyskującymi", "ciemnymi i matowymi", "jasnymi i matowymi", "jasnymi i połyskującymi"], correct: 3 },
+    { question: "Klientce z cerą atroficzną należy doradzić wykonywanie demakijażu twarzy", answers: ["żelem antybakteryjnym", "żelem myjącym", "mleczkiem kosmetycznym", "wodą z mydłem"], correct: 2 },
+    { question: "Przed przystąpieniem do wykonywania makijażu pędzel do nakładania podkładu należy", answers: ["zanurzyć w spirytusie salicylowym", "umyć w wodzie z mydłem i zdezynfekować", "umyć pod bieżącą wodą i wysterylizować", "wysterylizować w autoklawie"], correct: 1 },
+    { question: "Przeciwwskazaniem do wykonania u klientki zabiegu henny rzęs jest", answers: ["otarcie naskórka w okolicy brwi", "jęczmień powieki górnej", "zdiagnozowana krótkowzroczność", "świeża blizna na szyi"], correct: 1 },
+    { question: "Lato to typ kolorystyczny", answers: ["bardzo ciepły", "słoneczny", "kontrastowy", "chłodny"], correct: 3 },
+    { question: "Który z peelingów można wykonać metodą masażu manualnego lub z zastosowaniem brushingu?", answers: ["Ziołowy", "Scrub", "Gommage", "Kwasowy"], correct: 2 },
+    { question: "Wykorzystując do diagnozy skóry twistometr, dokonuje się oceny", answers: ["elastyczności skóry", "nawilżenia skóry", "natłuszczenia skóry", "odczynu skóry"], correct: 0 },
+    { question: "Pędzel przeznaczony do aplikacji różu jest", answers: ["miękki i skośny na końcu", "w kształcie wachlarza", "zakończony na prosto i płaski", "ostro zakończony"], correct: 0 },
+    { question: "Klientce z cerą naczyniową w celu złagodzenia zaczerwienienia i uspokojenia skóry należy zaproponować do stosowania na noc kremu zawierającego", answers: ["ceramidy i wyciąg z lawendy", "witaminę A i krzem", "alantoinę i algi morskie", "wyciągi z pokrzywy i łopianu"], correct: 2 },
 
 
+    //CZERWIEC 2022 2
+    { question: "W zabiegu o działaniu lipolitycznym, należy zastosować preparat zawierający w swoim składzie między innymi", answers: ["wyciągi z arniki i bluszczu", "żeń-szeń i mocznik", "kofeinę i forskolinę", "mukopolisacharydy i algi brunatne"], correct: 2 },
+    { question: "Do wykonania manicureu biologicznego u klientki należy zastosować", answers: ["remover i patyczek drewniany", "cęgi kątowe i dłutko", "gilotynę i frezarkę", "cążki do skórek i dłutko"], correct: 0 },
+    { question: "Przeprowadzenie u klienta zabiegu presoterapii wykluczają przeciwwskazania takie jak", answers: ["niewydolność oddechowa i żylaki", "ociężałe stopy i podudzia", "obrzęki pourazowe i pooperacyjne", "cellulit i otyłość"], correct: 0 },
+    { question: "Którą operację należy wykonać w ostatnim etapie przygotowania frezu diamentowego przed przystąpieniem do zabiegu z jego wykorzystaniem?", answers: ["Wysterylizowanie", "Oczyszczenie", "Wygotowanie", "Zdezynfekowanie"], correct: 0 },
+    { question: "W celu wzmocnienia oraz poprawy wyglądu kruchych i łamliwych płytek paznokciowych należy zaproponować klientce manicure", answers: ["biologiczny", "francuski", "japoński", "hybrydowy"], correct: 2 },
+    { question: "Który z zabiegów można wykonać zarówno techniką kontaktową jak i bezkontaktową?", answers: ["Endermologię", "Laseroterapię", "Elektrostymulację", "Galwanizację"], correct: 1 },
+    { question: "Klientce z rogowaceniem okołomieszkowym ramion należy zalecić do pielęgnacji domowej stosowanie peelingu ziarnistego oraz kremu", answers: ["z witaminami C i K", "z witaminami D i C", "z witaminami A i D", "z witaminami A i E"], correct: 3 },
+    { question: "Klientce, która chce zachować jędrny biust, należy zalecić do pielęgnacji domowej regularne stosowanie preparatów zawierających w składzie między innymi", answers: ["świetlik lekarski i wyciąg ze skrzypu polnego", "aminofilinę i wyciąg z kory dębu", "wyciągi z bluszczu pospolitego i miłorzębu japońskiego", "teofilinę i wyciąg z łopianu"], correct: 2 },
+    { question: "W celu zmniejszenia widoczności rozstępów na przedramionach należy zastosować metodę", answers: ["termolizy", "dezinkrustacji", "elektrostymulacji", "mikrodermabrazji"], correct: 3 },
+    { question: "Klientce z problemem nadmiernej potliwości dłoni należy zalecić", answers: ["złuszczanie skóry peelingiem z soli z dodatkiem oliwy", "moczenie dłoni w wywarze z kory dębu i naparze z szałwii", "stosowanie maści ichtiolowej", "wcieranie kilka razy dziennie preparatów z zawartością witaminy A"], correct: 1 },
+    { question: "W celu uzyskania efektu opalenizny całego ciała bez narażania skóry na działanie promieniowania ultrafioletowego należy posłużyć się", answers: ["chromatografem", "galwanem", "meksametrem", "aerografem"], correct: 3 },
+    { question: "Przeciwwskazaniami do wykonania zabiegu elektrostymulacji ciała są", answers: ["zaburzenia czucia i zmiany dermatologiczne skóry", "obrzęki i nadmiar tkanki tłuszczowej", "rozstępy i obniżenie siły mięśniowej", "blizny i obniżenie napięcia i elastyczności skóry"], correct: 0 },
+    { question: "Technika zdobienia paznokci, polegająca na zaaplikowaniu białego lakieru na wolny brzeg płytki paznokciowej w kształcie litery V, to manicure", answers: ["french klasyczny", "french chevron", "one stroke", "ombre"], correct: 1 },
+    { question: "Zabieg przy użyciu prądów impulsowych niskiej częstotliwości, którego celem jest pobudzenie tkanki nerwowej lub mięśniowej za pomocą impulsu elektrycznego, to", answers: ["sonoforeza", "jonoforeza", "elektrostymulacja", "lipoliza"], correct: 2 },
+    { question: "Przed przystąpieniem do wykonania zabiegu lipolizy ultradźwiękowej należy", answers: ["nałożyć na skórę olejek", "usunąć włosy woskiem twardym", "zwilżyć powierzchnię zabiegową wodą", "nanieść na skórę odpowiednią ilość obojętnego żelu"], correct: 3 },
+    { question: "W pielęgnacji gabinetowej kończyn dolnych ze schorzeniem stawów, kości i mięśni w celu złagodzenia bólu należy zastosować preparaty zawierające w składzie między innymi", answers: ["mocznik", "borowinę", "glinkę zieloną", "olejek cynamonowy"], correct: 1 },
+    { question: "Przeciwwskazaniem do wykonania zabiegu regenerująco-nawilżającego skóry stóp jest", answers: ["przebarwienie paznokci", "łamliwość paznokci", "bielactwo paznokci", "grzybica paznokci"], correct: 3 },
+    { question: "W celu usprawnienia funkcji układu limfatycznego należy użyć aparatu", answers: ["z głowicą diamentową", "z elektrodą igłową", "z mankietem uciskowym", "z pelotą szklaną"], correct: 2 },
+    { question: "W zabiegu wspomagającym modelowanie sylwetki należy zastosować aparat do", answers: ["mikrodermabrazji", "magnoterapii", "elektrokoagulacji", "elektrostymulacji"], correct: 3 },
+    { question: "W celu odkażenia gumowej bańki przed masażem należy zastosować metodę", answers: ["dezynfekcji chemicznej", "dezynfekcji termicznej", "sterylizacji wysokotemperaturowej", "sterylizacji niskotemperaturowej"], correct: 0 },
+    { question: "Do wykonania opatrunku zmniejszającego stan zapalny w przypadku wrastających paznokci należy zastosować", answers: ["wkładkę", "klamrę", "tamponadę", "ortezę"], correct: 2 },
+    { question: "Klientce, która chce zniwelować nierówności płytek paznokciowych, należy zaproponować aplikację lakieru", answers: ["perłowego", "podkładowego", "wypełniającego", "transparentnego"], correct: 2 },
+    { question: "Do wprowadzenia substancji aktywnych w głąb tkanek z wykorzystaniem zjawiska elektroporacji należy posłużyć się aparatem do", answers: ["jonoforezy", "brushingu", "mezoterapii", "kawitacji"], correct: 2 },
+    { question: "W masażu relaksacyjnym całego ciała, po technice głaskania należy zastosować kolejno techniki:", answers: ["oklepywania, wibracji", "rozcierania, ugniatania", "rozcierania, oklepywania", "oklepywania, wałkowania"], correct: 1 },
+    { question: "W celu trwałego usunięcia nadmiernego owłosienia za pomocą elektrolizy niezbędne jest wykorzystanie aparatu emitującego", answers: ["prąd wielkiej częstotliwości", "falę elektromagnetyczną", "prąd stały", "promienie długofalowe IRC"], correct: 2 },
+    { question: "Klientce z problemem pocących się stóp należy wykonać zabieg o działaniu", answers: ["rozgrzewającym", "regenerującym", "nawilżającym", "normalizującym"], correct: 3 },
+    { question: "Czynnością, którą należy wykluczyć u diabetyka podczas zabiegu pedicure, jest", answers: ["kąpiel stóp w brodziku z wodą o temperaturze 37°C", "opiłowanie paznokci pilnikiem szklanym", "obcinanie paznokci nożyczkami", "nakładanie preparatów chemicznych na modzele"], correct: 3 },
+    { question: "Przed wykonaniem na ciało klientki zabiegu endermologii należy bezwzględnie", answers: ["nanieść na ciało klientki żel sprzęgający", "przygotować podkłady bezpośrednie", "poprosić klientkę o założenie specjalnego kostiumu", "wykonać klientce peeling scrub"], correct: 2 },
+    { question: "Przygotowując klientkę do zabiegu sonoforezy, po nałożeniu ampułki ze składnikami aktywnymi na skórę, należy zaaplikować w miejsce poddane zabiegowi dodatkowo preparat", answers: ["znieczulający", "sprzęgający", "natłuszczający", "odtłuszczający"], correct: 1 },
+    { question: "Do odkażenia peloty przed planowanym zabiegiem darsonwalizacji skóry pleców należy zastosować dezynfekcję", answers: ["termiczną", "chemiczną", "fizyczną", "chemiczno-termiczną"], correct: 1 },
+    { question: "W celu określenia typu otyłości należy posłużyć się", answers: ["wskaźnikiem WHR", "wskaźnikiem PPM", "metodą profilometrii", "metodą diaskopii"], correct: 0 },
+    { question: "Preparat do pielęgnacji biustu zawierający w swoim składzie keratolinę służy do", answers: ["nawilżenia naskórka", "odżywienia naskórka", "rozpulchnienia naskórka", "złuszczenia naskórka"], correct: 3 },
+    { question: "W celu redukcji cellulitu tłuszczowego w okolicy zewnętrznej powierzchni ud należy wykonać zabieg", answers: ["koagulacji", "brushingu", "lipolizy", "pulweryzacji"], correct: 2 },
+    { question: "W celu usunięcia przebarwień z powierzchni grzbietowej dłoni należy zastosować metodę", answers: ["diatermii", "krioterapii", "presoterapii", "elektrostymulacji"], correct: 1 },
+    { question: "W zabiegu o działaniu przeciwbakteryjnym i zmniejszającym pocenie stóp należy zastosować preparat zawierający w składzie między innymi", answers: ["srebro i olejek miętowy", "borowinę i olejek sosnowy", "mocznik i olejek cynamonowy", "masło shea i olej z wiesiołka"], correct: 0 },
+    { question: "W celu usunięcia drobnoustrojów chorobotwórczych do poziomu bezpiecznego dla człowieka narzędzia nienaruszające ciągłości tkanek należy poddać procesowi", answers: ["pulweryzacji", "sterylizacji", "sanityzacji", "dezynfekcji"], correct: 3 },
+    { question: "W celu wykonania naświetlania lampą Sollux należy posłużyć się urządzeniem generującym promieniowanie", answers: ["ultrafioletowe", "widzialne", "podczerwone", "rentgenowskie"], correct: 2 },
+    { question: "Którą z metod należy zastosować podczas badania skóry objętej cellulitem?", answers: ["Ultrasonografię", "Ewaporymetrię", "Profilometrię", "Dermatoskopię"], correct: 0 },
+    { question: "Do diagnozy poziomu nawilżenia skóry biustu i dekoltu u klientki należy zastosować", answers: ["meksametr", "korneometr", "profilometr", "ekstensometr"], correct: 1 },
+    { question: "W celu spłycenia rozstępów wskazane jest wykonanie", answers: ["okładów parafinowych", "body wrappingu", "parafango", "eksfoliacji kwasami"], correct: 3 },
 
+
+    //STYCZEŃ 2022
+    { question: "Elementy pokazane na rysunku przeznaczone są do zabiegu", imageUrl: "https://www.testy.egzaminzawodowy.info/images_testy/a62_st22_16.jpg", answers: ["brushingu", "mikrodermabrazji", "masażu próżniowego", "mezoterapii bezigłowej"], correct: 1 },
+    { question: "Na której ilustracji przedstawiony jest pędzel przeznaczony do aplikacji pudru mineralnego?", imageUrl: "https://www.testy.egzaminzawodowy.info/images_testy/a61_st23_36.jpg", answers: ["Na ilustracji 4", "Na ilustracji 1", "Na ilustracji 3", "Na ilustracji 2"], correct: 3 },
+    { question: "Do przeprowadzenia diagnozy skóry dłoni w gabinecie kosmetycznym niezbędna jest lampa", answers: ["Minina", "Sollux", "lupa", "bioptron"], correct: 2 },
+    { question: "Przeciwwskazaniem do zastosowania algoterapii ciała jest między innymi", answers: ["nadczynność tarczycy", "trądzik pospolity", "wszczepiony rozrusznik serca", "obrzęk kończyny dolnej"], correct: 0 },
+    { question: "Do przeprowadzenia diagnozy skóry dłoni w gabinecie kosmetycznym niezbędna jest lampa", answers: ["Minina", "Sollux", "lupa", "bioptron"], correct: 2 },
+    { question: "Okluzję w zabiegach pielęgnacyjnych dłoni uzyskuje się poprzez", answers: ["wykonanie masażu na krem tłusty przed nałożeniem maski", "założenie rękawicy foliowej i rękawicy frotte po aplikacji maski", "wmasowanie kremu nawilżającego do wchłonięcia", "usunięcie zrogowaciałych komórek naskórka przy pomocy peelingu"], correct: 1 },
+    { question: "W zabiegu oxybrazji do złuszczenia martwych komórek naskórka wykorzystuje się tlen oraz", answers: ["tlenek glinu", "kwas owocowy", "sól fizjologiczną", "dwutlenek węgla"], correct: 2 },
+    { question: "Klientce z łuszczącą, szorstką skórą stóp zaleca się stosowanie w domu", answers: ["kremów nawilżających i masek odżywczych", "kremów rozjaśniających i masek algowych", "peelingów enzymatycznych i masek termoaktywnych", "peelingów gruboziarnistych i masek ściągających"], correct: 0 },
+    { question: "Wykonując zabieg body wrapping na brzuch i kończyny dolne w celu modelowania sylwetki należy nałożyć maskę i owinąć te części ciała folią kosmetyczną zaczynając od", answers: ["brzucha i zakończyć przy kostkach", "kostek i zakończyć na biodrach", "kostek i zakończyć na brzuchu", "pachwin i zakończyć w okolicy kolan"], correct: 2 },
+    { question: "Chcąc wykonać zdobienie paznokci metodą one stroke należy", answers: ["namalować cieniowane elementy kwiatowe przy użyciu pędzli w odpowiednio dobranym kształcie", "ozdobić paznokcie wypukłymi elementami wykonanymi z akrylu", "ozdobić paznokcie motywem koronki wykonanym plasteliną UV", "namalować wzory geometryczne o ostrych krawędziach przy użyciu rapitografu"], correct: 0 },
+    { question: "Do zabiegu rozgrzewającego na ciało wskazane są preparaty zawierające olejki eteryczne", answers: ["z drzewa różanego i eukaliptusowy", "cytrynowy i sosnowy", "cynamonowy i imbirowy", "z drzewa herbacianego i grejpfrutowy"], correct: 2},
+    { question: "W zabiegach antycellulitowych należy zastosować aparaty do", answers: ["galwanizacji anodowej i sonoforezy kawitacyjnej", "krioterapii miejscowej i waponizacji", "galwanizacji katodowej i darsonwalizacji", "mezoterapii bezigłowej i endermologii"], correct: 3 },
+    { question: "Polerowanie płytek paznokciowych w manicure biologicznym należy wykonać bezpośrednio", answers: ["po skróceniu paznokci", "przed malowaniem paznokci", "przed opiłowaniem paznokci", "po dezynfekcji dłoni"], correct: 1 },
+    { question: "Przeciwwskazaniami do przeprowadzenia zabiegu elektroepilacji igłowej u klientki są", answers: ["odbarwienie skóry i włosy krótsze niż 4 mm", "jasne owłosienie i ciemna karnacja", "gorączka i sztuczne zastawki serca", "przebarwienia skóry i rozszerzone naczynka krwionośne"], correct: 2 },
+    { question: "Zgodnie z zasadą aseptyki, podczas zabiegów narażających klienta na przerwanie ciągłości naskórka metalowym narzędziem kosmetyczka powinna założyć", answers: ["okulary z ciemnymi szkłami", "jednorazowe rękawiczki", "peniuar kosmetyczny", "opaskę kosmetyczną"], correct: 1 },
+    { question: "W celu zapobiegania szybkiemu odrostowi włosów po zabiegu depilacji woskiem należy zastosować na podrażnioną skórę kończyn dolnych preparat o działaniu", answers: ["regenerującym z kolagenem", "łagodzącym z arbutyną", "łagodzącym z papainą", "regenerującym z ceramidami"], correct: 2 },
+    { question: "Wykonując mezoterapię bezigłową osobie z cellulitem należy wybrać preparat zawierający między innymi:", answers: ["l-karnitynę, rutynę, wyciąg z karczocha", "witaminę A, wyciąg ze świetlika, argirelinę", "witaminę E, wyciąg z lipy drobnolistnej, oligoelementy", "minoksydyl, kwas hialuronowy, wyciąg z rumianku"], correct: 0 },
+    { question: "Przeciwwskazaniami wykluczającymi przeprowadzenie u klientki zabiegu body wrapping są", answers: ["obniżona elastyczność skóry i haluksy", "niewydolność nerek i nadciśnienie tętnicze", "rozstępy skórne i lipodystrofia", "skłonność do keloidów i ociężałość kończyn dolnych"], correct: 1 },
+    { question: "Przeciwwskazaniami do przeprowadzenia zabiegu manicure biologicznego są", answers: ["pęknięcia naskórka między palcami, brodawki, zanokcica", "onycholiza, łuszczyca skóry, cukrzyca", "koilonychia, hemofilia, leukonychia", "bielactwo, bruzdowanie podłużne paznokcia, skrzydlik"], correct: 0 },
+    { question: "W celu zmniejszenia widoczności rozstępów w fazie zanikowej należy wykonać", answers: ["elektrostymulację", "endermologię", "mikrodermabrazję", "lipolizę"], correct: 2 },
+    { question: "Podczas zdobienia paznokci wzór na pomalowaną płytkę paznokciową z wzornika należy przenieść za pomocą", answers: ["stempla", "magnesu", "wacika bezpyłowego", "płytki metalowej"], correct: 0 },
+    { question: "Trwałe usunięcie zbędnego owłosienia można uzyskać zabiegami z wykorzystaniem aparatów generujących", answers: ["światło spolaryzowane, fale radiowe, prąd interferencyjny", "światło laserowe, prąd galwaniczny, ultradźwięki", "podciśnienie, promieniowanie ultrafioletowe, prądy d’Arsonwala", "parę wodną, prądy diadynamiczne, promieniowanie podczerwone"], correct: 1 },
+    { question: "Czynnikiem fizycznym stosowanym podczas wykonywania zabiegów kompresjoterapii kończyn dolnych jest", answers: ["temperatura", "podciśnienie", "światło IPL", "prąd galwaniczny"], correct: 1 },
+    { question: "Błoto algowe w zabiegu liftingująco-modelującym na biust należy nałożyć", answers: ["gąbką", "aplikatorem", "szpatułką kosmetyczną", "pędzlem kosmetycznym"], correct: 2 },
+    { question: "Który zabieg należy zalecić klientce w profilaktyce niewydolności żylnej", answers: ["Lipolizę", "Masaż stemplami", "Masaż kamieniami", "Presoterapię"], correct: 3 },
+    { question: "Kostka Arkady jest przeznaczona do", answers: ["ustawienia palucha koślawego", "korygowania wrastających paznokci", "przedłużania naturalnych paznokci", "usuwania hiperkeratoz z pięt"], correct: 1 },
+    { question: "Klientce z przebarwieniami nikotynowymi dłoni należy zalecić stosowanie kosmetyków zawierających", answers: ["alantoinę i d-panthenol", "ceramidy i fosfolipidy", "kolagen i kofeinę", "arbutynę i witaminę C"], correct: 3 },
+    { question: "Klientce z problem suchych, szorstkich łokci należy zaproponować stosowanie", answers: ["kremu z witaminą C", "kremu z witaminą A", "maści z wyciągiem z nagietka", "maści z wyciągiem z arniki górskiej"], correct: 1 },
+    { question: "Przeciwwskazaniami do zabiegu zmniejszającego nadmierną potliwość stóp są", answers: ["grzybica paznokci i brodawki", "zastoje limfatyczne i cukrzyca", "obrzęki i zrogowaciały naskórek", "nadwaga i wrastające paznokcie"], correct: 0 },
+    { question: "Przygotowując klientkę do wykonania zabiegu o działaniu antycellulitowym w obrębie ud z wykorzystaniem fali radiowej należy", answers: ["poprosić klientkę o założenie specjalnego kostiumu", "zaaplikować na skórę klientki żel przewodzący", "odtłuścić miejsce poddawane zabiegowi", "owinąć klientkę folią kosmetyczną"], correct: 1 },
+    { question: "Klientce przyjmującej preparaty o charakterze fotouczulającym nie należy wykonywać", answers: ["termolizy", "laseroterapii", "depilacji pastą cukrową", "depilacji woskiem ciepłym"], correct: 1 },
+    { question: "Klientce z liposklerozą należy zalecić stosowanie preparatów zawierających między innymi", answers: ["witaminę C, alantoinę, kwas glikolowy", "wyciągi z ruszczyka i kasztanowca, kofeinę", "witaminę B6, koenzym Q10, ceramidy", "d-panthenol, wyciągi z łopianu i rozmarynu"], correct: 1 },
+    { question: "Krem do stóp z witaminą A należy zastosować przy", answers: ["wrastających paznokciach i odparzeniach", "nadmiernej potliwości i nagniotkach", "pękających piętach i rogowaceniu okołomieszkowym", "modzelach i brodawkach płaskich"], correct: 2 },
+    { question: "Klientce z problemem tzw. ciężkich nóg należy zaproponować zabieg pielęgnacyjny o działaniu", answers: ["regeneracyjno-natłuszczającym", "zmiękczająco-wygładzającym", "nawilżająco-normalizującym", "nawilżająco-drenującym"], correct: 3 },
+    { question: "Który preparat należy zastosować do odtłuszczenia płytek paznokciowych w celu zwiększenia przyczepności i przedłużenia trwałości zdobienia hybrydowego?", answers: ["Puder", "Bazę", "Primer", "Top"], correct: 2 },
+    { question: "W celu likwidacji form przetrwalnikowych bakterii należy zastosować preparat do dezynfekcji oznaczony", answers: ["symbolem V", "symbolem B", "symbolem F", "symbolem S"], correct: 3 },
+    { question: "Rozdrobnione zioła owinięte bawełnianą tkaniną należy wykorzystać", answers: ["w masażu stemplami", "w mikromasażu", "w masażu punktowym", "w hydromasażu"], correct: 0 },
+    { question: "W stylizacji paznokci ma zastosowanie", answers: ["lampa bioptron", "lampa IR", "lampa Minina", "lampa UV"], correct: 3 },
+    { question: "Do zabiegu zmniejszającego widoczność rozstępów należy zastosować między innymi preparaty", answers: ["z kwasami AHA i wyciągiem z wąkroty azjatyckiej", "z borowiną i wyciągiem z szałwii lekarskiej", "z l-karnityną i wyciągiem z miłorzębu japońskiego", "z kofeiną i wyciągiem z arniki górskiej"], correct: 0 },
+    { question: "Przed przystąpieniem do wykonania zabiegu kawitacji pleców klientki, szpatułę ultradźwiękową należy", answers: ["umyć mydłem antybakteryjnym", "przetrzeć tonikiem antybakteryjnym", "zdezynfekować preparatem do dezynfekcji narzędzi", "wysterylizować w autoklawie"], correct: 2 },
+    { question: "W celu zmniejszenia objawów fotostarzenia występujących na grzbietowych powierzchniach ręki należy wykonać", answers: ["kompresjoterapię bierną", "manicure hybrydowy", "masaż ultradźwiękowy", "eksfoliację kwasami"], correct: 3 },
+    { question: "W warunkach domowych klientce, która chce się zrelaksować należy zaproponować do kąpieli następujący zestaw olejków eterycznych", answers: ["imbirowy, jałowcowy, z kopru włoskiego", "lawendowy, pomarańczowy, grejpfrutowy", "cynamonowy, sosnowy, eukaliptusowy", "z drzewa herbacianego, paczulowy, anyżowy"], correct: 1 },
+    
+    
+    
     //{ question: "", answers: ["", "", "", ""], correct: 3 },
 ];
 
@@ -346,11 +474,18 @@ function startQuiz(mode) {
 // Function to show a single question
 function showQuestion() {
     const questionElement = document.getElementById("question");
+    const questionImage = document.getElementById("question-image");
     const answerButtons = document.querySelectorAll(".answer");
     const currentQuestion = selectedQuestions[currentQuestionIndex];
     console.log("Showing question: ", currentQuestion); // Debugging
     if (currentQuestion) {
         questionElement.innerHTML = `<strong>${currentQuestionIndex + 1} :</strong> ${currentQuestion.question}`;
+        if (currentQuestion.imageUrl) {
+            questionImage.src = currentQuestion.imageUrl;
+            questionImage.style.display = 'block';
+        } else {
+            questionImage.style.display = 'none';
+        }
         answerButtons.forEach((button, index) => {
             button.innerText = currentQuestion.answers[index];
             button.disabled = false;
@@ -359,11 +494,14 @@ function showQuestion() {
                 button.disabled = true;
                 if (index === answers[currentQuestionIndex]) {
                     button.classList.add('selected');
+                    if (index === currentQuestion.correct) {
+                        button.classList.add('correct');
+                    } else {
+                        button.classList.add('wrong');
+                    }
                 }
                 if (index === currentQuestion.correct) {
                     button.classList.add('correct');
-                } else if (index === answers[currentQuestionIndex] && index !== currentQuestion.correct) {
-                    button.classList.add('wrong');
                 }
             }
         });
@@ -432,6 +570,16 @@ function showAllQuestions() {
         const questionText = document.createElement('h3');
         questionText.innerHTML = `<strong>${questionIndex + 1}.</strong> ${question.question}`;
         questionDiv.appendChild(questionText);
+        
+        if (question.imageUrl) {
+            const questionImage = document.createElement('img');
+            questionImage.src = question.imageUrl;
+            questionImage.alt = "Question Image";
+            questionImage.style.maxWidth = "100%";
+            questionImage.style.height = "auto";
+            questionImage.style.marginBottom = "15px";
+            questionDiv.appendChild(questionImage);
+        }
         const answersList = document.createElement('ul');
         answersList.classList.add('answers');
         question.answers.forEach((answer, answerIndex) => {
