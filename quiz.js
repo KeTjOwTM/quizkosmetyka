@@ -312,7 +312,7 @@ const questions = [
 // Function to shuffle questions
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
+        const j = Math.floor(Math.random() * (i + 1)); 
         [array[i], array[j]] = [array[j], array[i]];
     }
 }
@@ -356,17 +356,14 @@ function showQuestion() {
             button.disabled = false;
             button.classList.remove('selected', 'correct', 'wrong'); // Reset classes
             if (answers[currentQuestionIndex] !== undefined) {
+                button.disabled = true;
                 if (index === answers[currentQuestionIndex]) {
                     button.classList.add('selected');
-                    button.disabled = true;
-                    if (index === currentQuestion.correct) {
-                        button.classList.add('correct');
-                    } else {
-                        button.classList.add('wrong');
-                    }
                 }
                 if (index === currentQuestion.correct) {
                     button.classList.add('correct');
+                } else if (index === answers[currentQuestionIndex] && index !== currentQuestion.correct) {
+                    button.classList.add('wrong');
                 }
             }
         });
@@ -463,3 +460,4 @@ function goBackToMenu() {
     score = 0;
     answers = []; // Clear user's answers
 }
+
