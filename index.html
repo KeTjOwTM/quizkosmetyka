@@ -79,6 +79,11 @@
             overflow-y: scroll; /* Enable vertical scrolling */
             overflow-x: hidden; /* Hide horizontal scrolling */
         }
+        #question-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
@@ -92,6 +97,7 @@
         <!-- Quiz z jednym pytaniem na raz -->
         <div id="quiz" style="display: none;">
             <div id="question" class="question"></div>
+            <img id="question-image" src="" alt="Question Image" style="display: none;">
             <div class="answers">
                 <button class="answer" onclick="selectAnswer(0)"></button>
                 <button class="answer" onclick="selectAnswer(1)"></button>
