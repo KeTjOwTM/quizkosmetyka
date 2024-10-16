@@ -440,7 +440,7 @@ const questions = [
 // Function to shuffle questions
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1)); 
+        const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
 }
@@ -451,6 +451,7 @@ let currentQuestionIndex = 0;
 let score = 0;
 let totalQuestions = 0;
 let answers = []; // to keep track of user's answers
+let examMode = false;
 
 // Function to start the quiz
 function startQuiz(mode) {
@@ -459,16 +460,26 @@ function startQuiz(mode) {
         shuffleArray(questions);
         selectedQuestions = questions.slice(0, 40);
         totalQuestions = 40;
-        console.log("Selected questions: ", selectedQuestions); // Debugging
         document.getElementById('quiz').style.display = 'block';
         showQuestion();
     } else {
         selectedQuestions = questions;
         totalQuestions = questions.length;
-        console.log("All questions: ", selectedQuestions); // Debugging
         document.getElementById('all-questions').style.display = 'block';
         showAllQuestions();
     }
+    examMode = false;
+}
+
+// Function to start the exam mode
+function startExam() {
+    document.getElementById('start-screen').style.display = 'none';
+    shuffleArray(questions);
+    selectedQuestions = questions.slice(0, 40); // Customize the number of questions if needed
+    totalQuestions = 40;
+    document.getElementById('quiz').style.display = 'block';
+    examMode = true;
+    showQuestion();
 }
 
 // Function to show a single question
@@ -477,7 +488,6 @@ function showQuestion() {
     const questionImage = document.getElementById("question-image");
     const answerButtons = document.querySelectorAll(".answer");
     const currentQuestion = selectedQuestions[currentQuestionIndex];
-    console.log("Showing question: ", currentQuestion); // Debugging
     if (currentQuestion) {
         questionElement.innerHTML = `<strong>${currentQuestionIndex + 1} :</strong> ${currentQuestion.question}`;
         if (currentQuestion.imageUrl) {
@@ -491,17 +501,23 @@ function showQuestion() {
             button.disabled = false;
             button.classList.remove('selected', 'correct', 'wrong'); // Reset classes
             if (answers[currentQuestionIndex] !== undefined) {
-                button.disabled = true;
-                if (index === answers[currentQuestionIndex]) {
-                    button.classList.add('selected');
+                if (!examMode) {
+                    button.disabled = true;
+                    if (index === answers[currentQuestionIndex]) {
+                        button.classList.add('selected');
+                        if (index === currentQuestion.correct) {
+                            button.classList.add('correct');
+                        } else {
+                            button.classList.add('wrong');
+                        }
+                    }
                     if (index === currentQuestion.correct) {
                         button.classList.add('correct');
-                    } else {
-                        button.classList.add('wrong');
                     }
-                }
-                if (index === currentQuestion.correct) {
-                    button.classList.add('correct');
+                } else {
+                    if (index === answers[currentQuestionIndex]) {
+                        button.classList.add('selected');
+                    }
                 }
             }
         });
@@ -516,15 +532,19 @@ function showQuestion() {
 function selectAnswer(index) {
     const currentQuestion = selectedQuestions[currentQuestionIndex];
     const answerButtons = document.querySelectorAll(".answer");
+
     answerButtons.forEach((button, btnIndex) => {
-        button.disabled = true;
+        button.classList.remove('selected'); // Deselect previous selection
         if (btnIndex === index) {
-            button.classList.add('selected');
+            button.classList.add('selected'); // Select new answer
         }
-        if (btnIndex === currentQuestion.correct) {
-            button.classList.add('correct');
-        } else if (btnIndex === index && btnIndex !== currentQuestion.correct) {
-            button.classList.add('wrong');
+        if (!examMode) {
+            button.disabled = true;
+            if (btnIndex === currentQuestion.correct) {
+                button.classList.add('correct');
+            } else if (btnIndex === index && btnIndex !== currentQuestion.correct) {
+                button.classList.add('wrong');
+            }
         }
     });
     answers[currentQuestionIndex] = index; // Save user's answer
@@ -539,7 +559,11 @@ function nextQuestion() {
         currentQuestionIndex++;
         showQuestion();
     } else {
-        showResult(); // Show final result
+        if (examMode) {
+            showExamResult();
+        } else {
+            showResult(); // Show final result
+        }
     }
 }
 
@@ -557,6 +581,8 @@ function showResult() {
     document.getElementById("result").style.display = "block";
     document.getElementById("score").innerText = score;
     document.getElementById("total-questions").innerText = totalQuestions;
+    const percentage = (score / totalQuestions) * 100;
+    document.getElementById("percentage").innerText = Math.round(percentage) + '%';
 }
 
 // Function to show all questions at once
@@ -564,21 +590,19 @@ function showAllQuestions() {
     const questionsList = document.getElementById('questions-list');
     questionsList.innerHTML = '';
     selectedQuestions.forEach((question, questionIndex) => {
-        console.log("Displaying question: ", question); // Debugging
         const questionDiv = document.createElement('div');
         questionDiv.classList.add('full-question');
         const questionText = document.createElement('h3');
         questionText.innerHTML = `<strong>${questionIndex + 1}.</strong> ${question.question}`;
         questionDiv.appendChild(questionText);
-        
         if (question.imageUrl) {
-            const questionImage = document.createElement('img');
-            questionImage.src = question.imageUrl;
-            questionImage.alt = "Question Image";
-            questionImage.style.maxWidth = "100%";
-            questionImage.style.height = "auto";
-            questionImage.style.marginBottom = "15px";
-            questionDiv.appendChild(questionImage);
+            const imgElement = document.createElement('img');
+            imgElement.src = question.imageUrl;
+            imgElement.alt = "Question Image";
+            imgElement.style.maxWidth = "100%";
+            imgElement.style.height = "auto";
+            imgElement.style.marginBottom = "15px";
+            questionDiv.appendChild(imgElement);
         }
         const answersList = document.createElement('ul');
         answersList.classList.add('answers');
@@ -596,7 +620,108 @@ function showAllQuestions() {
     });
 }
 
-// Function to go back to the menu
+// Function to show exam result
+function showExamResult() {
+    document.getElementById("quiz").style.display = "none";
+    document.getElementById("all-questions").style.display = "block";
+    const questionsList = document.getElementById('questions-list');
+    questionsList.innerHTML = '';
+
+    // Create result summary div
+    const resultDiv = document.createElement('div');
+    resultDiv.classList.add('result-summary');
+    resultDiv.innerHTML = `<h2>Twoj wynik: ${score}/${totalQuestions}</h2><h3>Procent: ${Math.round((score / totalQuestions) * 100)}%</h3>`;
+    questionsList.appendChild(resultDiv);
+
+    selectedQuestions.forEach((question, questionIndex) => {
+        const questionDiv = document.createElement('div');
+        questionDiv.classList.add('full-question');
+        const questionText = document.createElement('h3');
+        questionText.innerHTML = `<strong>${questionIndex + 1}.</strong> ${question.question}`;
+        questionDiv.appendChild(questionText);
+        if (question.imageUrl) {
+            const imgElement = document.createElement('img');
+            imgElement.src = question.imageUrl;
+            imgElement.alt = "Question Image";
+            imgElement.style.maxWidth = "100%";
+            imgElement.style.height = "auto";
+            imgElement.style.marginBottom = "15px";
+            questionDiv.appendChild(imgElement);
+        }
+        const answersList = document.createElement('ul');
+        answersList.classList.add('answers');
+        question.answers.forEach((answer, answerIndex) => {
+            const answerItem = document.createElement('li');
+            answerItem.innerText = answer;
+            answerItem.classList.add('answer');
+            if (answerIndex === question.correct) {
+                answerItem.classList.add('correct');
+            }
+            if (answerIndex === answers[questionIndex]) {
+                answerItem.classList.add('selected');
+                if (answerIndex !== question.correct) {
+                    answerItem.classList.add('wrong');
+                }
+            }
+            answersList.appendChild(answerItem);
+        });
+        questionDiv.appendChild(answersList);
+        
+        // Display whether the user's answer was correct or incorrect
+        const resultText = document.createElement('p');
+        if (answers[questionIndex] === question.correct) {
+            resultText.innerText = "Poprawna odpowiedź";
+            resultText.style.color = "green";
+        } else {
+            resultText.innerText = "Niepoprawna odpowiedź";
+            resultText.style.color = "red";
+        }
+        questionDiv.appendChild(resultText);
+        questionsList.appendChild(questionDiv);
+    });
+
+    // Append the result summary at the top of the list
+    questionsList.prepend(resultDiv);
+
+    // Ensure the top of the page is visible
+    resultDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// Function to show all questions at once
+function showAllQuestions() {
+    const questionsList = document.getElementById('questions-list');
+    questionsList.innerHTML = '';
+    selectedQuestions.forEach((question, questionIndex) => {
+        const questionDiv = document.createElement('div');
+        questionDiv.classList.add('full-question');
+        const questionText = document.createElement('h3');
+        questionText.innerHTML = `<strong>${questionIndex + 1}.</strong> ${question.question}`;
+        questionDiv.appendChild(questionText);
+        if (question.imageUrl) {
+            const imgElement = document.createElement('img');
+            imgElement.src = question.imageUrl;
+            imgElement.alt = "Question Image";
+            imgElement.style.maxWidth = "100%";
+            imgElement.style.height = "auto";
+            imgElement.style.marginBottom = "15px";
+            questionDiv.appendChild(imgElement);
+        }
+        const answersList = document.createElement('ul');
+        answersList.classList.add('answers');
+        question.answers.forEach((answer, answerIndex) => {
+            const answerItem = document.createElement('li');
+            answerItem.innerText = answer;
+            answerItem.classList.add('answer');
+            if (answerIndex === question.correct) {
+                answerItem.classList.add('correct');
+            }
+            answersList.appendChild(answerItem);
+        });
+        questionDiv.appendChild(answersList);
+        questionsList.appendChild(questionDiv);
+    });
+}
+
 function goBackToMenu() {
     // Hide all sections except the start menu
     document.getElementById('quiz').style.display = 'none';
@@ -608,4 +733,3 @@ function goBackToMenu() {
     score = 0;
     answers = []; // Clear user's answers
 }
-
