@@ -93,34 +93,63 @@
             <h2>Wybierz tryb quizu</h2>
             <button onclick="startQuiz(40)">Losowe 40 pytań</button>
             <button onclick="startQuiz('all')">Wszystkie pytania</button>
+            <button onclick="startExam()">Egzamin</button>
         </div>
+                
         <!-- Quiz z jednym pytaniem na raz -->
-        <div id="quiz" style="display: none;">
-            <div id="question" class="question"></div>
-            <img id="question-image" src="" alt="Question Image" style="display: none;">
-            <div class="answers">
-                <button class="answer" onclick="selectAnswer(0)"></button>
-                <button class="answer" onclick="selectAnswer(1)"></button>
-                <button class="answer" onclick="selectAnswer(2)"></button>
-                <button class="answer" onclick="selectAnswer(3)"></button>
+                <div id="quiz" style="display: none;">
+                    <div id="question" class="question"></div>
+                    <img id="question-image" src="" alt="Question Image" style="display: none;">
+                    <div class="answers">
+                        <button class="answer" onclick="selectAnswer(0)"></button>
+                        <button class="answer" onclick="selectAnswer(1)"></button>
+                        <button class="answer" onclick="selectAnswer(2)"></button>
+                        <button class="answer" onclick="selectAnswer(3)"></button>
+                    </div>
+                    <button id="prev-btn" onclick="prevQuestion()" style="display:none;">Poprzednie pytanie</button>
+                    <button id="next-btn" onclick="nextQuestion()">Następne pytanie</button>
+                    <button onclick="goBackToMenu()">Cofnij do menu</button>
+                </div>
+                
+                <!-- Egzamin mode -->
+                <div id="exam" style="display: none;">
+                    <div id="question" class="question"></div>
+                    <img id="question-image" src="" alt="Question Image" style="display: none;">
+                    <div class="answers">
+                        <button class="answer" onclick="selectExamAnswer(0)"></button>
+                        <button class="answer" onclick="selectExamAnswer(1)"></button>
+                        <button class="answer" onclick="selectExamAnswer(2)"></button>
+                        <button class="answer" onclick="selectExamAnswer(3)"></button>
+                    </div>
+                    <button id="prev-btn-exam" onclick="prevExamQuestion()" style="display:none;">Poprzednie pytanie</button>
+                    <button id="next-btn-exam" onclick="nextExamQuestion()">Następne pytanie</button>
+                    <button onclick="goBackToMenu()">Cofnij do menu</button>
+                </div>
+        
+                <!-- Wyświetlenie wszystkich pytań -->
+                <div id="all-questions" style="display: none;">
+                    <h2>Wszystkie pytania i poprawne odpowiedzi:</h2>
+                    <div id="questions-list"></div>
+                    <button onclick="goBackToMenu()">Cofnij do menu</button>
+                </div>
+                
+                <!-- Wynik -->
+                <div id="result" style="display:none">
+                    <h2>Twój wynik: <span id="score"></span>/<span id="total-questions"></span></h2>
+                    <h3>Procent: <span id="percentage"></span></h3>
+                    <button onclick="location.reload()">Zagraj ponownie</button>
+                    <button onclick="goBackToMenu()">Cofnij do menu</button>
+                </div>                
+                
+                <!-- Egzamin Result -->
+                <div id="exam-result" style="display:none">
+                    <h2>Twój wynik z egzaminu</h2>
+                    <div id="exam-questions-list"></div>
+                    <button onclick="location.reload()">Zagraj ponownie</button>
+                    <button onclick="goBackToMenu()">Cofnij do menu</button>
+                </div>
             </div>
-            <button id="prev-btn" onclick="prevQuestion()" style="display:none;">Poprzednie pytanie</button>
-            <button id="next-btn" onclick="nextQuestion()">Następne pytanie</button>
-            <button onclick="goBackToMenu()">Cofnij</button>
-        </div>
-        <!-- Wyświetlenie wszystkich pytań -->
-        <div id="all-questions" style="display: none;">
-            <h2>Wszystkie pytania i poprawne odpowiedzi:</h2>
-            <div id="questions-list"></div>
-            <button onclick="goBackToMenu()">Cofnij</button>
-        </div>
-        <!-- Wynik -->
-        <div id="result" style="display:none">
-            <h2>Twój wynik: <span id="score"></span>/<span id="total-questions"></span></h2>
-            <button onclick="location.reload()">Zagraj ponownie</button>
-            <button onclick="goBackToMenu()">Cofnij</button>
-        </div>
-    </div>
-    <script src="quiz.js"></script>
-</body>
-</html>
+            <script src="quiz.js"></script>
+        </body>
+        </html>
+        
