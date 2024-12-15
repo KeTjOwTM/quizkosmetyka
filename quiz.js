@@ -433,11 +433,76 @@ const questions = [
     { question: "W warunkach domowych klientce, która chce się zrelaksować należy zaproponować do kąpieli następujący zestaw olejków eterycznych", answers: ["imbirowy, jałowcowy, z kopru włoskiego", "lawendowy, pomarańczowy, grejpfrutowy", "cynamonowy, sosnowy, eukaliptusowy", "z drzewa herbacianego, paczulowy, anyżowy"], correct: 1 },
     
     
+    //STYCZEŃ 2022 2
+    { question: "Jasny kolor skóry, włosy chłodny blond lub popielate, oczy jasne, błękitne lub szarozielone i blade usta, to cechy charakterystyczne dla typu urody", answers: ["wiosna", "jesień", "zima", "lato"], correct: 3 },
+    { question: "Aerograf kosmetyczny tzw. airbrush jest przeznaczony między innymi do", answers: ["makijażu permanentnego", "face i body paintingu", "waporyzacji skóry twarzy", "rozpylania toniku na twarz"], correct: 1 },
+    { question: "Przed przystąpieniem do wykonania u klientki pierwszego zabiegu farbowania brwi i rzęs należy", answers: ["zaproponować użycie wyłącznie brązowej henny", "wykonać test płatkowy dobę przed zabiegiem", "wykonać test uczuleniowy godzinę przed zabiegiem", "poprosić o przybycie na zabieg bez makijażu"], correct: 1 },
+    { question: "Klientce ze skórą naczyniową i wrażliwą podczas zabiegu pielęgnacyjnego twarzy należy zastosować", answers: ["mieszankę peelingu ziołowego i po 10 minutach wmasować", "peeling drobnoziarnisty i przez 5 minut masować", "peeling gommage i po około 15 minutach zetrzeć", "peeling enzymatyczny i po około 10 minutach zmyć"], correct: 3 },
+    { question: "Który zestaw składników aktywnych należy zalecić klientce w składzie kosmetyków przeznaczonych do pielęgnacji skóry dojrzałej i odwodnionej?", answers: ["Kwas hialuronowy, ceramidy, elastynę i witaminę A", "Balsam peruwiański, garbniki, krwawnik i witaminę D", "Żywice, cynk, olejek z drzewa herbacianego i witaminę B1", "Wyciąg z lukrecji, enzymy, żywokost lekarski i witaminę K"], correct: 0 },
+    { question: "Ciepłą maskę sporządzoną z zaparzonego siemienia lnianego, kwiatu lipy i rumianku należy zastosować podczas wykonywania zabiegu w celu", answers: ["rozpulchnienia skóry przed jej oczyszczaniem", "zamknięcia porów po oczyszczaniu manualnym", "rozjaśnienia przebarwień pigmentacyjnych", "złagodzenia zaczerwienień po mikrodermabrazji"], correct: 0 },
+    { question: "Makijaż ślubny powinien charakteryzować się", answers: ["rozświetlonym drobinkami brokatu wyrazistym makijażem oczu i mocno kryjącym podkładem z efektem opalenizny", "mocno podkreślonymi oczami, tzw. smokey eyes, sztucznymi rzęsami i intensywnym różem na policzkach", "subtelnie, ale wyraźnie podkreślonymi oczami, rzęsami pokrytymi wodoodpornym tuszem i rozświetleniem", "delikatnym makijażem oczu w jasnych cielistych barwach, brązowym tuszem na rzęsach i jasnym beżowym błyszczykiem"], correct: 2 },
+    { question: "Optyczna korekta oczu osadzonych zbyt blisko siebie polega między innymi na naniesieniu", answers: ["jasnego cienia na środek powieki ruchomej", "ciemnego cienia w kącikach wewnętrznych oczu", "jasnego cienia w kącikach wewnętrznych oczu", "ciemnego cienia pod łukiem brwiowym"], correct: 2 },
+    { question: "Peloty wywołującej wyładowania energii elektromagnetycznej w postaci deszczu iskrowego należy użyć w zabiegu", answers: ["ridulizy", "sonoforezy", "dezinkrustacji", "darsonwalizacji"], correct: 3 },
+    { question: "Do zbędnego wyposażenia kufra wizażystki należy zaliczyć", answers: ["peeling AHA, miskę gumową, olejek do masażu", "błyszczyki, temperówkę, transparentny puder sypki", "preparaty do demakijażu, sztuczne rzęsy, fluidy", "kremy do różnych typów skóry, pelerynkę, make-up fixer"], correct: 0 },
+    { question: "Lampą stosowaną w diagnozie kosmetycznej jest lampa", answers: ["Sollux", "Minina", "kwarcowa", "Wooda"], correct: 3 },
+    { question: "Charakterystycznymi cechami skóry suchej są", answers: ["jasny kolor i cienki, matowy naskórek", "żółtawy odcień i prawidłowa elastyczność", "szarawy odcień i lekki połysk", "ziemisty kolor i nieliczne zaskórniki"], correct: 0},  
+    { question: "Optyczna korekta opadających zewnętrznych kącików oczu w makijażu polega na wykonaniu", answers: ["kresek na całej długości oczu, w zewnętrznych kącikach oczu grubszych skierowanych lekko w górę.", "bardzo cienkich, długich i prostych kresek, poprowadzonych prosto, poza kąciki zewnętrzne oczu.", "grubych kresek rozpoczynających się w połowie powiek, a kończących się dokładnie w kącikach zewnętrznych oczu.", "kresek grubszych na środkowych częściach powiek, a cieńszych w kącikach zewnętrznych i wewnętrznych."], correct: 0 },
+    { question: "Występujące u osób starszych płaskie, miękkie, żółtawe nacieki, zlokalizowane na powiekach to", answers: ["kaszaki.", "kępki żółte.", "ostudy.", "plamy soczewicowate."], correct: 1 },
+    { question: "Zgodna z metodyką kolejność ruchów w klasycznym masażu kosmetycznym to", answers: ["głaskanie, rozcieranie, oklepywanie, wibracja, ugniatanie.", "głaskanie, rozcieranie, ugniatanie, oklepywanie, wibracja.", "głaskanie, ugniatanie, rozcieranie, oklepywanie, wibracja.", "głaskanie, rozcieranie, ugniatanie, wibracja, oklepywanie."], correct: 1 },
+    { question: "Zgodnie z procedurą postępowania z pędzlami kosmetycznymi użytymi do makijażu należy je kolejno", answers: ["umyć wodą z mydłem, osuszyć, zdezynfekować płynem na bazie alkoholu, osuszyć.", "wytrzeć chusteczką higieniczną, spryskać płynem do dezynfekcji narzędzi.", "umyć wodą z mydłem, opłukać wodą destylowaną, osuszyć.", "przetrzeć płynem do dezynfekcji narzędzi, osuszyć, wysterylizować w autoklawie."], correct: 0 },
+    { question: "W celu złagodzenia objawów przedawkowania promieniowania UV, należy wykonać naświetlanie lampą Sollux z filtrem", answers: ["przeźroczystym.", "niebieskim.", "fioletowym.", "czerwonym."], correct: 3 },
+    { question: "Przeciwwskazaniem do wykonania zabiegu darsonwalizacji skóry twarzy jest", answers: ["trądzik różowaty.", "trądzik pospolity.", "świąd skóry.", "łojotok skóry."], correct: 0 },
+    { question: "Klientce z sińcami pod oczami, należy zalecić stosowanie w warunkach domowych", answers: ["żeli pod oczy z ekstraktami ze świetlika lekarskiego i bluszczu.", "zimnych okładów z wyciągami ze skrzypu i lipy na powieki.", "kremów pod oczy z wyciągami z arniki i miłorzębu japońskiego.", "ciepłych kompresów z naparu z szałwii pod oczy."], correct: 2 },
+    { question: "Mały, płaski pędzel z naturalnego włosia ze spiczastym zakończeniem należy zastosować do", answers: ["aplikacji pomadki na usta.", "aplikacji fluidu na twarz.", "roztarcia cieni na powiekach.", "nałożenia różu na policzki."], correct: 0 },
+    { question: "Użycie prądów d’Arsonvala w obrębie skóry twarzy wskazane jest między innymi bezpośrednio po wykonaniu zabiegu", answers: ["złuszczania peelingiem ziołowym.", "eksfoliacji kwasem migdałowym.", "mezoterapii igłowej.", "depilacji pęsetą."], correct: 3 },
+    { question: "Zabezpieczenie ust klientki wazeliną i oczu płatkami kosmetycznymi jest konieczne przed przystąpieniem do wykonywania", answers: ["peelingu kawitacyjnego.", "mikrodermabrazji tlenkiem glinu.", "eksfoliacji kwasem glikolowym.", "maski alginatowej."], correct: 2 },
+    { question: "Teleangiektazje w obrębie policzków oraz skrzydełek nosa stanowią przeciwwskazanie do wykonania zabiegu", answers: ["łagodzącego z maską kremową.", "modelującego z maską gipsową.", "nawilżającego z maską alginatową.", "regenerującego z płatem kolagenowym."], correct: 1 },
+    { question: "Przeciwwskazaniem do zastosowania metody przedłużania rzęs 1:1 są między innymi", answers: ["kreski permanentne na górnych powiekach.", "rzadkie i bardzo jasne rzęsy.", "krótkowzroczność i noszenie okularów.", "swędzące i zaczerwienione powieki."], correct: 3 },
+    { question: "W celu zatuszowania fioletowych cieni pod oczami należy użyć w miejscu ich wystąpienia korektora", answers: ["w kolorze fluidu, z zielonym odcieniem.", "jaśniejszego od fluidu, z żółtym odcieniem.", "jaśniejszego od fluidu, z niebieskim odcieniem.", "ciemniejszego od fluidu, z pomarańczowym odcieniem."], correct: 1 },
+    { question: "Wykonując makijaż wieczorowy klientce ze skórą tłustą, bezpośrednio przed nałożeniem fluidu należy zaaplikować", answers: ["krem z filtrem UV.", "bazę matującą.", "krem odżywczy.", "bazę rozświetlającą."], correct: 1 },
+    { question: "Komunikacja werbalna stosowana podczas wywiadu kosmetycznego pomiędzy kosmetyczką a klientem polega na", answers: ["słownej wymianie informacji.", "stosowaniu przyjaznych gestów.", "wykorzystaniu mimiki.", "podtrzymywaniu kontaktu wzrokowego."], correct: 0 },
+    { question: "Która ze wskazanych substancji złuszczających ma najgłębsze działanie?", answers: ["Bromelaina.", "Kwas salicylowy.", "Fenol.", "Kwas migdałowy."], correct: 2 },
+    { question: "Przygotowanie i aplikacja maski ściągającej kaolinowej w proszku polega na rozrobieniu jej", answers: ["z wodą utlenioną i nałożeniu szpatułką silikonową.", "z wodą mineralną i nałożeniu pędzlem.", "z koncentratem ziołowym i nałożeniu palcami.", "z aktywatorem do alg i nałożeniu szpatułką drewnianą."], correct: 1 },
+    { question: "Pod wpływem działania promieniowania podczerwonego na skórę twarzy w tkankach powstaje efekt", answers: ["elektrokinetyczny.", "fotochemiczny.", "elektrochemiczny.", "fototermiczny."], correct: 3 },
+    { question: "W celu uzyskania 2 litrów roztworu roboczego środka dezynfekcyjnego o stężeniu 10% należy zmieszać", answers: ["2 000 ml wody i 200 ml środka dezynfekcyjnego.", "1 800 ml wody i 360 ml środka dezynfekcyjnego.", "1 800 ml wody i 200 ml środka dezynfekcyjnego.", "2 000 ml wody i 20 ml środka dezynfekcyjnego."], correct: 2 },
+    { question: "Podczas wywiadu kosmetycznego należy bezwzględnie zadać pytania", answers: ["o dotychczasową pielęgnację i stosowane terapie farmakologiczne.", "o poziom wykształcenia i warunki wykonywania pracy.", "o stan cywilny i rodzaj stosowanej diety.", "o warunki mieszkaniowe i adres zamieszkania."], correct: 0 },
+    { question: "Regulację łuku brwiowego u klientki należy rozpocząć od", answers: ["środka do nasady brwi.", "nasady do końca brwi.", "końca do nasady brwi.", "środka do końca brwi."], correct: 2 },
+    { question: "Podczas zabiegu galwanizacji stabilnej należy zastosować między innymi", answers: ["elektrodę Bergoniego i jałową gazę.", "elektrodę wałeczkową i folię aluminiową.", "pelotę szklaną i żel do jonoforezy.", "głowicę do ultradźwięków i żel sprzęgający."], correct: 0 },
+    { question: "W celu wyjałowienia łyżeczki Unny należy przeprowadzić", answers: ["sterylizację.", "dezynfekcję.", "dezinkrustację.", "sanityzację."], correct: 0 },
+    { question: "Zgodnie z zasadami postępowania z narzędziami i przyborami użytymi do zabiegu kosmetycznego, które nie naruszają ciągłości tkanek, należy je kolejno", answers: ["oczyścić, zdezynfekować płynem dezynfekcyjnym, opłukać wodą mineralną i włożyć do sanityzatora.", "umyć pod bieżącą wodą, wytrzeć, zdezynfekować płynem dezynfekcyjnym, opłukać pod bieżącą wodą i wysuszyć.", "oczyścić, umyć pod bieżącą wodą, zdezynfekować płynem dezynfekcyjnym, opłukać w wodzie destylowanej i wysuszyć.", "umyć wodą destylowaną, zanurzyć w środku dezynfekcyjnym, opłukać pod bieżącą wodą i wysuszyć."], correct: 2 },
+    { question: "W celu określenia odczynu skóry należy zastosować do diagnozy", answers: ["korneometr.", "pehametr.", "kutometr.", "dermatoskop."], correct: 1 },
+    { question: "Wykonując makijaż wieczorowy młodej klientce z widocznymi teleangiektazjami należy zastosować", answers: ["biały korektor i fluid liftingujący.", "zielony korektor i fluid kryjący.", "fioletowy korektor i fluid nawilżający.", "żółty korektor i fluid matujący."], correct: 1 },
+    { question: "Przygotowując klienta do wykonania zabiegu mikrodermabrazji diamentowej, obszar skóry, który będzie poddany temu zabiegowi należy", answers: ["zabezpieczyć wazeliną kosmetyczną.", "posmarować żelem aloesowym.", "rozpulchnić pod wapozonem.", "przetrzeć środkiem odtłuszczającym."], correct: 3 },
+    { question: "W zabiegu pielęgnacyjnym delikatnej i cienkiej skóry twarzy z teleangiektazjami u 60-letniej klientki, należy zastosować między innymi", answers: ["płyn micelarny do demakijażu, maskę gipsową i aparat do mikrodermabrazji korundowej.", "piankę do demakijażu, maskę peel-off i aparat do darsonwalizacji.", "żel do demakijażu, maskę termiczną i aparat do mikrodermabrazji diamentowej.", "śmietankę do demakijażu, maskę regenerującą i aparat do ultradźwięków."], correct: 3 },  
+    
+    
+    //CZERWIEC 2021
+    { question: "Przed zabiegiem oczyszczania manualnego skóry twarzy klientki z płytkim unaczynieniem okolicy nosa, w celu przygotowania skóry należy zastosować", answers: ["krem rozpulchniający pod folię", "maskę borowinową pod maskę termiczną", "maskę ziołową pod wapozon", "tłusty krem pod działanie promieniowania podczerwonego"], correct: 0 },
+    { question: "Zalotkę do podkręcenia rzęs należy przed zabiegiem", answers: ["poddać sterylizacji parą wodną", "umyć", "zdezynfekować", "poddać sterylizacji tlenkiem etylenu"], correct: 2 },
+    { question: "Którego pędzla należy użyć w celu wykonania kreski na krawędzi górnej powieki z użyciem produktu kremowego zaprezentowanego na ilustracji", imageUrl: "https://www.testy.egzaminzawodowy.info/images_testy/a61_cz21_36.jpg", answers: ["Miękkiego, skośnego na końcu", "Wąskiego, ostro zakończonego", "Gęstego kabuki", "Rozłożystego, w kształcie wachlarza"], correct: 1 },
+    { question: "Do oceny poziomu ukrwienia skóry należy zastosować metodę", answers: ["diaskopii", "korneometrii", "profilometrii", "sebumetrii"], correct: 0 },
+    { question: "Typ kolorystyczny określany jako ciepły, jasny, delikatny, lekki i świeży to", answers: ["zima", "jesień", "wiosna", "lato"], correct: 2 },
+    { question: "Cechy charakterystyczne dla klientki o letnim typie urody to", answers: ["beżowa cera, oczy w ciepłej barwie, włosy w kolorze ciepłego blondu", "beżowobrzoskwiniowa cera, złotobrązowe piegi, oliwkowe oczy", "śniada cera, czarne włosy oraz oczy fiołkowoniebieskie", "blada cera, oczy chłodnej barwy, włosy w kolorze mysiego blondu"], correct: 3 },
+    { question: "W celu usunięcia warstwy rogowej naskórka twarzy za pomocą kryształów tlenku glinu należy zastosować metodę", answers: ["mikrodermabrazji korundowej", "dermabrazji", "mikrodermabrazji diamentowej", "oxybrazji"], correct: 0 },
+    { question: "Przeciwwskazaniem do wykonania makijażu jest wystąpienie u klientki", answers: ["krosty", "bielactwa", "opryszczki", "ostudy"], correct: 2 },
+    { question: "Różnej wielkości torbiele łojowe pokryte skórą, w obrębie mieszków włosowych i gruczołów łojowych, bez zmian zapalnych, występujące najczęściej na twarzy, karku i owłosionej skórze głowy, to", answers: ["ostudy", "kaszaki", "keloidy", "zaskórniki"], correct: 1 },
+    { question: "W modelowaniu oczu głęboko osadzonych należy", answers: ["nałożyć jasny cień pod liniami brwi", "rozjaśnić powieki górne, ruchome", "przyciemnić powieki górne, ruchome", "obrysować oczy czarną kredką"], correct: 1 },
+    { question: "W celu uzyskania działania przeciwbakteryjnego, wysuszającego i ściągającego na skórze tłustej należy zastosować preparaty kosmetyczne zawierające w swoim składzie", answers: ["ceramidy", "cytokininy", "garbniki", "flawonoidy"], correct: 2},
+    { question: "Klientce o przyżółconej, ziemistej cerze należy zalecić stosowanie na skórę twarzy korektora w kolorze", answers: ["fioletowym", "zielonym", "białym", "beżowym"], correct: 0 },
+    { question: "Peloty wywołujące wyładowania energii elektromagnetycznej w postaci deszczu iskrowego należy użyć w zabiegu", answers: ["dezinkrustacji", "sonoforezy", "darsonwalizacji", "ridulizy"], correct: 2 },
+    { question: "Przed wykonaniem zabiegu darsonwalizacji należy skórę twarzy klienta", answers: ["posmarować obojętnym żelem", "nawilżyć kremem", "natłuścić", "osuszyć"], correct: 3 },
+    { question: "Igły służące do usuwania prosaków, bezpośrednio po wykonaniu zabiegu należy", answers: ["zdezynfekować preparatem do dezynfekcji narzędzi", "wyrzucić do kosza na odpady zmieszane", "umieścić w pojemniku na odpady medyczne", "wysterylizować w sterylizatorze z gorącą parą i wysokim ciśnieniem"], correct: 2 },
+    { question: "Optyczna korekta twarzy w kształcie gruszki w strefie podbródka polega na", answers: ["przyciemnieniu brody", "przyciemnieniu kości żuchwy", "rozjaśnieniu kości żuchwy", "rozjaśnieniu brody"], correct: 0 },
+    { question: "Gruba, ziemista, słabo ukrwiona z rozszerzonymi porami ułożonymi blisko siebie, to cechy wskazujące na cerę", answers: ["naczyniową", "suchą", "atroficzną", "tłustą"], correct: 3 },
+    { question: "Przed pierwszym zabiegiem farbowania brwi i rzęs henną należy przeprowadzić test", answers: ["płatkowy", "bibułkowy", "palpacyjny", "D-squame"], correct: 0 },
+    { question: "25-letniej klientce z cerą naczyniową należy zaproponować wykonanie serii zabiegów", answers: ["liftingujących", "regenerujących", "uszczelniających", "normalizujących"], correct: 2 },
+    { question: "Zestaw narzędzi niezbędnych w pracy wizażystki to", answers: ["twistometr, lustro i pędzle", "hoker, zalotka i kutometr", "hoker, lustro i pędzle", "ekspozytor, zalotka i ekstensometr"], correct: 2 }
+    
     
     //{ question: "", answers: ["", "", "", ""], correct: 3 },
 ];
 
-// Function to shuffle questions
+// Funkcja tasująca tablicę
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -445,157 +510,162 @@ function shuffleArray(array) {
     }
 }
 
-// Variables for the quiz
-let selectedQuestions = [];
-let currentQuestionIndex = 0;
-let score = 0;
-let totalQuestions = 0;
-let answers = []; // to keep track of user's answers
-let examMode = false;
+// Zmienne dla quizu
+let selectedQuestions = []; // Wybrane pytania do quizu
+let currentQuestionIndex = 0; // Indeks aktualnego pytania
+let score = 0; // Wynik gracza
+let totalQuestions = 0; // Łączna liczba pytań
+let answers = []; // Przechowywanie odpowiedzi użytkownika
+let examMode = false; // Tryb egzaminacyjny
 
-// Function to start the quiz
+// Funkcja rozpoczynająca quiz
 function startQuiz(mode) {
-    document.getElementById('start-screen').style.display = 'none';
-    if (mode === 40) {
-        shuffleArray(questions);
-        selectedQuestions = questions.slice(0, 40);
+    document.getElementById('start-screen').style.display = 'none'; // Ukrywanie ekranu startowego
+    if (mode === 40) { // Tryb ograniczony do 40 pytań
+        shuffleArray(questions); // Tasowanie pytań
+        selectedQuestions = questions.slice(0, 40); // Wybór pierwszych 40 pytań
         totalQuestions = 40;
-        document.getElementById('quiz').style.display = 'block';
-        showQuestion();
-    } else {
-        selectedQuestions = questions;
+        document.getElementById('quiz').style.display = 'block'; // Wyświetlanie sekcji quizu
+        showQuestion(); // Pokazanie pierwszego pytania
+    } else { // Tryb z wszystkimi pytaniami
+        selectedQuestions = questions; // Wybór wszystkich pytań
         totalQuestions = questions.length;
-        document.getElementById('all-questions').style.display = 'block';
-        showAllQuestions();
+        document.getElementById('all-questions').style.display = 'block'; // Wyświetlanie sekcji z wszystkimi pytaniami
+        showAllQuestions(); // Pokazanie wszystkich pytań
     }
-    examMode = false;
+    examMode = false; // Ustawienie trybu na quiz (nie egzamin)
 }
 
-// Function to start the exam mode
+// Funkcja rozpoczynająca tryb egzaminu
 function startExam() {
-    document.getElementById('start-screen').style.display = 'none';
-    shuffleArray(questions);
-    selectedQuestions = questions.slice(0, 40); // Customize the number of questions if needed
+    document.getElementById('start-screen').style.display = 'none'; // Ukrywanie ekranu startowego
+    shuffleArray(questions); // Tasowanie pytań
+    selectedQuestions = questions.slice(0, 40); // Wybór 40 pytań
     totalQuestions = 40;
-    document.getElementById('quiz').style.display = 'block';
-    examMode = true;
-    showQuestion();
+    document.getElementById('quiz').style.display = 'block'; // Wyświetlanie sekcji quizu
+    examMode = true; // Włączenie trybu egzaminu
+    showQuestion(); // Pokazanie pierwszego pytania
 }
 
-// Function to show a single question
+// Funkcja wyświetlająca pojedyncze pytanie
 function showQuestion() {
-    const questionElement = document.getElementById("question");
-    const questionImage = document.getElementById("question-image");
-    const answerButtons = document.querySelectorAll(".answer");
-    const currentQuestion = selectedQuestions[currentQuestionIndex];
+    const questionElement = document.getElementById("question"); // Element pytania
+    const questionImage = document.getElementById("question-image"); // Element obrazu pytania
+    const answerButtons = document.querySelectorAll(".answer"); // Przycisk odpowiedzi
+    const currentQuestion = selectedQuestions[currentQuestionIndex]; // Aktualne pytanie
+
     if (currentQuestion) {
-        questionElement.innerHTML = `<strong>${currentQuestionIndex + 1} :</strong> ${currentQuestion.question}`;
-        if (currentQuestion.imageUrl) {
+        questionElement.innerHTML = `<strong>${currentQuestionIndex + 1} :</strong> ${currentQuestion.question}`; // Wyświetlanie numeru i treści pytania
+        if (currentQuestion.imageUrl) { // Jeśli pytanie ma obrazek
             questionImage.src = currentQuestion.imageUrl;
-            questionImage.style.display = 'block';
+            questionImage.style.display = 'block'; // Pokazanie obrazka
         } else {
-            questionImage.style.display = 'none';
+            questionImage.style.display = 'none'; // Ukrycie obrazka
         }
+
         answerButtons.forEach((button, index) => {
-            button.innerText = currentQuestion.answers[index];
-            button.disabled = false;
-            button.classList.remove('selected', 'correct', 'wrong'); // Reset classes
-            if (answers[currentQuestionIndex] !== undefined) {
-                if (!examMode) {
-                    button.disabled = true;
+            button.innerText = currentQuestion.answers[index]; // Ustawianie tekstu odpowiedzi
+            button.disabled = false; // Odblokowanie przycisku
+            button.classList.remove('selected', 'correct', 'wrong'); // Resetowanie klas CSS
+
+            if (answers[currentQuestionIndex] !== undefined) { // Jeśli użytkownik już odpowiedział
+                if (!examMode) { // Jeśli to nie tryb egzaminu
+                    button.disabled = true; // Zablokowanie przycisku
                     if (index === answers[currentQuestionIndex]) {
-                        button.classList.add('selected');
+                        button.classList.add('selected'); // Oznaczenie wybranej odpowiedzi
                         if (index === currentQuestion.correct) {
-                            button.classList.add('correct');
+                            button.classList.add('correct'); // Oznaczenie poprawnej odpowiedzi
                         } else {
-                            button.classList.add('wrong');
+                            button.classList.add('wrong'); // Oznaczenie błędnej odpowiedzi
                         }
                     }
                     if (index === currentQuestion.correct) {
-                        button.classList.add('correct');
+                        button.classList.add('correct'); // Oznaczenie poprawnej odpowiedzi
                     }
-                } else {
+                } else { // W trybie egzaminu
                     if (index === answers[currentQuestionIndex]) {
-                        button.classList.add('selected');
+                        button.classList.add('selected'); // Oznaczenie wybranej odpowiedzi
                     }
                 }
             }
         });
-        // Show/hide previous button
+
+        // Ukrywanie lub pokazywanie przycisku "Poprzednie"
         document.getElementById("prev-btn").style.display = currentQuestionIndex === 0 ? 'none' : 'inline-block';
-        // Change next button to finish button on last question
+        // Zmiana tekstu przycisku "Następne pytanie" na "Zakończ test" na ostatnim pytaniu
         document.getElementById("next-btn").innerText = currentQuestionIndex === totalQuestions - 1 ? 'Zakończ test' : 'Następne pytanie';
     }
 }
 
-// Function to handle answer selection
+// Funkcja obsługująca wybór odpowiedzi
 function selectAnswer(index) {
-    const currentQuestion = selectedQuestions[currentQuestionIndex];
-    const answerButtons = document.querySelectorAll(".answer");
+    const currentQuestion = selectedQuestions[currentQuestionIndex]; // Aktualne pytanie
+    const answerButtons = document.querySelectorAll(".answer"); // Przycisk odpowiedzi
 
     answerButtons.forEach((button, btnIndex) => {
-        button.classList.remove('selected'); // Deselect previous selection
+        button.classList.remove('selected'); // Usuwanie poprzedniego wyboru
         if (btnIndex === index) {
-            button.classList.add('selected'); // Select new answer
+            button.classList.add('selected'); // Oznaczenie nowej odpowiedzi
         }
-        if (!examMode) {
-            button.disabled = true;
+        if (!examMode) { // Jeśli nie tryb egzaminu
+            button.disabled = true; // Zablokowanie przycisków
             if (btnIndex === currentQuestion.correct) {
-                button.classList.add('correct');
+                button.classList.add('correct'); // Oznaczenie poprawnej odpowiedzi
             } else if (btnIndex === index && btnIndex !== currentQuestion.correct) {
-                button.classList.add('wrong');
+                button.classList.add('wrong'); // Oznaczenie błędnej odpowiedzi
             }
         }
     });
-    answers[currentQuestionIndex] = index; // Save user's answer
+    answers[currentQuestionIndex] = index; // Zapisanie odpowiedzi użytkownika
     if (index === currentQuestion.correct) {
-        score++;
+        score++; // Zwiększenie wyniku, jeśli odpowiedź poprawna
     }
 }
 
-// Function to go to the next question or show the result
+// Funkcja przechodzenia do następnego pytania lub wyświetlania wyniku
 function nextQuestion() {
     if (currentQuestionIndex < totalQuestions - 1) {
-        currentQuestionIndex++;
-        showQuestion();
+        currentQuestionIndex++; // Przejście do następnego pytania
+        showQuestion(); // Wyświetlenie pytania
     } else {
         if (examMode) {
-            showExamResult();
+            showExamResult(); // Wyświetlenie wyników egzaminu
         } else {
-            showResult(); // Show final result
+            showResult(); // Wyświetlenie końcowego wyniku
         }
     }
 }
 
-// Function to go to the previous question
+// Funkcja przechodzenia do poprzedniego pytania
 function prevQuestion() {
     if (currentQuestionIndex > 0) {
-        currentQuestionIndex--;
-        showQuestion();
+        currentQuestionIndex--; // Cofnięcie indeksu pytania
+        showQuestion(); // Wyświetlenie poprzedniego pytania
     }
 }
 
-// Function to show the final result
+// Funkcja wyświetlająca wynik końcowy
 function showResult() {
-    document.getElementById("quiz").style.display = "none";
-    document.getElementById("result").style.display = "block";
-    document.getElementById("score").innerText = score;
-    document.getElementById("total-questions").innerText = totalQuestions;
-    const percentage = (score / totalQuestions) * 100;
-    document.getElementById("percentage").innerText = Math.round(percentage) + '%';
+    document.getElementById("quiz").style.display = "none"; // Ukrycie sekcji quizu
+    document.getElementById("result").style.display = "block"; // Wyświetlenie sekcji wyników
+    document.getElementById("score").innerText = score; // Wyświetlenie wyniku
+    document.getElementById("total-questions").innerText = totalQuestions; // Wyświetlenie liczby pytań
+    const percentage = (score / totalQuestions) * 100; // Obliczenie procentów
+    document.getElementById("percentage").innerText = Math.round(percentage) + '%'; // Wyświetlenie procentów
 }
 
-// Function to show all questions at once
+// Funkcja wyświetlająca wszystkie pytania jednocześnie
 function showAllQuestions() {
-    const questionsList = document.getElementById('questions-list');
+    const questionsList = document.getElementById('questions-list'); // Lista pytań
     questionsList.innerHTML = '';
     selectedQuestions.forEach((question, questionIndex) => {
         const questionDiv = document.createElement('div');
         questionDiv.classList.add('full-question');
         const questionText = document.createElement('h3');
-        questionText.innerHTML = `<strong>${questionIndex + 1}.</strong> ${question.question}`;
+        questionText.innerHTML = `<strong>${questionIndex + 1}.</strong> ${question.question}`; // Treść pytania
         questionDiv.appendChild(questionText);
-        if (question.imageUrl) {
+
+        if (question.imageUrl) { // Jeśli pytanie ma obrazek
             const imgElement = document.createElement('img');
             imgElement.src = question.imageUrl;
             imgElement.alt = "Question Image";
@@ -604,14 +674,15 @@ function showAllQuestions() {
             imgElement.style.marginBottom = "15px";
             questionDiv.appendChild(imgElement);
         }
-        const answersList = document.createElement('ul');
+
+        const answersList = document.createElement('ul'); // Lista odpowiedzi
         answersList.classList.add('answers');
         question.answers.forEach((answer, answerIndex) => {
             const answerItem = document.createElement('li');
-            answerItem.innerText = answer;
+            answerItem.innerText = answer; // Tekst odpowiedzi
             answerItem.classList.add('answer');
             if (answerIndex === question.correct) {
-                answerItem.classList.add('correct');
+                answerItem.classList.add('correct'); // Oznaczenie poprawnej odpowiedzi
             }
             answersList.appendChild(answerItem);
         });
@@ -620,14 +691,14 @@ function showAllQuestions() {
     });
 }
 
-// Function to show exam result
+// Funkcja wyświetlająca wynik egzaminu
 function showExamResult() {
-    document.getElementById("quiz").style.display = "none";
-    document.getElementById("all-questions").style.display = "block";
-    const questionsList = document.getElementById('questions-list');
+    document.getElementById("quiz").style.display = "none"; // Ukrycie sekcji quizu
+    document.getElementById("all-questions").style.display = "block"; // Wyświetlenie sekcji z wszystkimi pytaniami
+    const questionsList = document.getElementById('questions-list'); // Lista pytań
     questionsList.innerHTML = '';
 
-    // Create result summary div
+    // Tworzenie podsumowania wyników
     const resultDiv = document.createElement('div');
     resultDiv.classList.add('result-summary');
     resultDiv.innerHTML = `<h2>Twoj wynik: ${score}/${totalQuestions}</h2><h3>Procent: ${Math.round((score / totalQuestions) * 100)}%</h3>`;
@@ -639,7 +710,8 @@ function showExamResult() {
         const questionText = document.createElement('h3');
         questionText.innerHTML = `<strong>${questionIndex + 1}.</strong> ${question.question}`;
         questionDiv.appendChild(questionText);
-        if (question.imageUrl) {
+
+        if (question.imageUrl) { // Jeśli pytanie ma obrazek
             const imgElement = document.createElement('img');
             imgElement.src = question.imageUrl;
             imgElement.alt = "Question Image";
@@ -648,26 +720,27 @@ function showExamResult() {
             imgElement.style.marginBottom = "15px";
             questionDiv.appendChild(imgElement);
         }
-        const answersList = document.createElement('ul');
+
+        const answersList = document.createElement('ul'); // Lista odpowiedzi
         answersList.classList.add('answers');
         question.answers.forEach((answer, answerIndex) => {
             const answerItem = document.createElement('li');
-            answerItem.innerText = answer;
+            answerItem.innerText = answer; // Tekst odpowiedzi
             answerItem.classList.add('answer');
             if (answerIndex === question.correct) {
-                answerItem.classList.add('correct');
+                answerItem.classList.add('correct'); // Oznaczenie poprawnej odpowiedzi
             }
             if (answerIndex === answers[questionIndex]) {
-                answerItem.classList.add('selected');
+                answerItem.classList.add('selected'); // Oznaczenie wybranej odpowiedzi
                 if (answerIndex !== question.correct) {
-                    answerItem.classList.add('wrong');
+                    answerItem.classList.add('wrong'); // Oznaczenie błędnej odpowiedzi
                 }
             }
             answersList.appendChild(answerItem);
         });
         questionDiv.appendChild(answersList);
-        
-        // Display whether the user's answer was correct or incorrect
+
+        // Wyświetlenie, czy odpowiedź była poprawna
         const resultText = document.createElement('p');
         if (answers[questionIndex] === question.correct) {
             resultText.innerText = "Poprawna odpowiedź";
@@ -680,56 +753,22 @@ function showExamResult() {
         questionsList.appendChild(questionDiv);
     });
 
-    // Append the result summary at the top of the list
+    // Dodanie podsumowania na górze listy
     questionsList.prepend(resultDiv);
 
-    // Ensure the top of the page is visible
+    // Przewinięcie strony do góry
     resultDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-// Function to show all questions at once
-function showAllQuestions() {
-    const questionsList = document.getElementById('questions-list');
-    questionsList.innerHTML = '';
-    selectedQuestions.forEach((question, questionIndex) => {
-        const questionDiv = document.createElement('div');
-        questionDiv.classList.add('full-question');
-        const questionText = document.createElement('h3');
-        questionText.innerHTML = `<strong>${questionIndex + 1}.</strong> ${question.question}`;
-        questionDiv.appendChild(questionText);
-        if (question.imageUrl) {
-            const imgElement = document.createElement('img');
-            imgElement.src = question.imageUrl;
-            imgElement.alt = "Question Image";
-            imgElement.style.maxWidth = "100%";
-            imgElement.style.height = "auto";
-            imgElement.style.marginBottom = "15px";
-            questionDiv.appendChild(imgElement);
-        }
-        const answersList = document.createElement('ul');
-        answersList.classList.add('answers');
-        question.answers.forEach((answer, answerIndex) => {
-            const answerItem = document.createElement('li');
-            answerItem.innerText = answer;
-            answerItem.classList.add('answer');
-            if (answerIndex === question.correct) {
-                answerItem.classList.add('correct');
-            }
-            answersList.appendChild(answerItem);
-        });
-        questionDiv.appendChild(answersList);
-        questionsList.appendChild(questionDiv);
-    });
-}
-
+// Funkcja powrotu do menu głównego
 function goBackToMenu() {
-    // Hide all sections except the start menu
+    // Ukrycie wszystkich sekcji oprócz menu startowego
     document.getElementById('quiz').style.display = 'none';
     document.getElementById('all-questions').style.display = 'none';
     document.getElementById('result').style.display = 'none';
     document.getElementById('start-screen').style.display = 'block';
-    // Reset quiz state
+    // Resetowanie stanu quizu
     currentQuestionIndex = 0;
     score = 0;
-    answers = []; // Clear user's answers
+    answers = []; // Wyczyść odpowiedzi użytkownika
 }
